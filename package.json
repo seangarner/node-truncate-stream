@@ -1,0 +1,31 @@
+{
+  "name": "truncate-stream",
+  "version": "1.0.0",
+  "description": "stream which truncates input after N bytes",
+  "main": "truncate-stream.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seangarner/node-truncate-stream.git"
+  },
+  "keywords": [
+    "stream",
+    "streams",
+    "truncate",
+    "cut"
+  ],
+  "author": "Sean Garner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seangarner/node-truncate-stream/issues"
+  },
+  "homepage": "https://github.com/seangarner/node-truncate-stream",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "concat-stream": "^1.4.6",
+    "mocha": "^2.0.1",
+    "randstream": "^0.3.2"
+  }
+}
