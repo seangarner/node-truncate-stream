@@ -31,7 +31,7 @@ describe('truncate-stream', function() {
   it('should not truncate a stream that was smaller than the maxBytes', function (done) {
     var source = new stream.Readable();
     source._read = function () {
-      this.push(new Buffer(100));
+      this.push(typeof(Buffer.alloc) == 'function' ? Buffer.alloc(100) : new Buffer(100)); // support for node 6 Buffer.alloc method
       this.push(null);
     };
     var truncate = new TruncateStream({maxBytes: 1024});
