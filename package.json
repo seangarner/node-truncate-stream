@@ -1,6 +1,6 @@
 {
   "name": "truncate-stream",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "stream which truncates input after N bytes",
   "main": "truncate-stream.js",
   "scripts": {
